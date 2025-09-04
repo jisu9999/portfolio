@@ -1,1 +1,26 @@
 @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+:root {
+  --gray8: #1b1c1f;
+  --gray7: #26282b;
+  --gray6: #474c52;
+  --gray5: #73787e;
+  --gray4: #9fa4a8;
+  --gray3: #cacdd2;
+  --gray2: #eaebed;
+  --gray1: #eaebed;
+  --gray0: #ffffff;
+  --border_color: #e0e0e0;
+}
