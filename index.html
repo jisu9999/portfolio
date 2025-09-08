@@ -6,6 +6,10 @@
     <title>Portfolio - Jisu Kim</title>
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <!-- swiper cdn 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/style.js"></script>
     <!-- favicon -->
     <link rel="icon" href="images/icon/j_favicon.png" />
     <!-- google font -->
@@ -62,24 +66,30 @@
             </p>
           </div>
         </main>
-        <section class="proeject_wrap">
-          <div class="web">
-            <h2 class="home_title">Web Publishing</h2>
-            <swiper-container
-              class="mySwiper"
-              pagination="true"
-              pagination-clickable="true"
-              space-between="40"
-              slides-per-view="4"
-            >
-              <swiper-slide>
+      </div>
+      <section class="proeject_wrap">
+        <div class="web">
+          <h2 class="home_title webPub_title">Web Publishing</h2>
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="auto"
+            space-between="40"
+            slides-per-group="1"
+            loop="false"
+          >
+            <swiper-slide>
+              <a
+                href="projects/bingfree_detail.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="web_thumb">
                   <img
                     src="images/home/bingfree_thumb.png"
                     alt="빙프리 대표이미지"
                   />
                 </div>
-                <div class="bingfree_desc_wrap">
+                <div class="desc_wrap">
                   <div class="home_project_title">Bingfree</div>
                   <p class="home_project_desc">
                     브랜드 기획부터 디자인, 개발까지 참여한 협업 프로젝트입니다.
@@ -93,17 +103,130 @@
                     <span>Node.js</span>
                   </div>
                 </div>
-              </swiper-slide>
-              <swiper-slide>Slide 2</swiper-slide>
-              <swiper-slide>Slide 3</swiper-slide>
-              <swiper-slide>Slide 4</swiper-slide>
-              <swiper-slide>Slide 5</swiper-slide>
-            </swiper-container>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="web_thumb">
+                <img
+                  src="images/home/adminpage_thumb.png"
+                  alt="빙프리 관리자페이지 대표이미지"
+                />
+              </div>
+              <div class="desc_wrap">
+                <div class="home_project_title">
+                  Bingfree-AdminPage (관리자·기사 사이트)
+                </div>
+                <p class="home_project_desc">
+                  브랜드 기획부터 디자인, 개발까지 참여한 협업 프로젝트입니다.
+                  Vue 기반 컴포넌트 설계를 통한 관리자·기사 페이지입니다.
+                </p>
+                <div class="tech_btn">
+                  <span>HTML</span>
+                  <span>SCSS</span>
+                  <span>Vue</span>
+                  <span>JavaScript</span>
+                  <span>Tailwind</span>
+                  <span>Node.js</span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="web_thumb">
+                <img src="images/home/lush_thumb.png" alt="러쉬 대표이미지" />
+              </div>
+              <div class="desc_wrap">
+                <div class="home_project_title">LUSH</div>
+                <p class="home_project_desc">
+                  기존 러쉬 사이트를 개선하고자 디자인부터 개발까지 진행한 협업
+                  프로젝트입니다. 미디어쿼리를 활용한 반응형 사이트입니다.
+                </p>
+                <div class="tech_btn">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="web_thumb">
+                <img
+                  src="images/home/uniqlo_thumb.png"
+                  alt="유니클로 대표이미지"
+                />
+              </div>
+              <div class="desc_wrap">
+                <div class="home_project_title">LUSH</div>
+                <p class="home_project_desc">
+                  유니클로 리뉴얼 사이트입니다. Swiper 라이브러리의 이해와 활용
+                  능력을 키우기 위해 작업한 적응형 웹 사이트입니다.
+                </p>
+                <div class="tech_btn">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="web_thumb">
+                <img
+                  src="images/home/cocomoco_thumb.png"
+                  alt="코코모코 대표이미지"
+                />
+              </div>
+              <div class="desc_wrap">
+                <div class="home_project_title">COCOMOCO</div>
+                <p class="home_project_desc">
+                  사이트 리뉴얼 과정에서 리디자인과 미디워쿼리를 활용한 반응형
+                  작업을 진행하였습니다.
+                </p>
+                <div class="tech_btn">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+          <!-- 커스텀 버튼 -->
+          <div class="custom-dots">
+            <button class="dot dot-prev">
+              <svg
+                width="20"
+                height="21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1"
+                style="transform: rotate(180deg)"
+              >
+                <path
+                  d="m10.469 4.545 5.625 5.625-5.625 5.625M15.313 10.17H3.905"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <button class="dot dot-next">
+              <svg
+                width="20"
+                height="21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1"
+                style="vertical-align: middle"
+              >
+                <path
+                  d="m10.469 4.545 5.625 5.625-5.625 5.625M15.313 10.17H3.905"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
-    <!-- swiper cdn 스크립트 -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

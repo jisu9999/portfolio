@@ -88,6 +88,8 @@ body {
   background: var(--gray4, #9fa4a8);
   color: var(--gray0);
   padding: 4px 10px;
+  font-weight: 400;
+  font-size: 14px;
 }
 .home_nav {
   color: var(--gray8, #1b1c1f);
@@ -170,7 +172,7 @@ header nav .gnb {
 }
 .inner_container .main .introduction {
   width: 913px;
-  background: pink;
+  /* background: pink; */
   margin: 0 auto;
   margin-top: 170px;
 }
@@ -178,24 +180,73 @@ header nav .gnb {
   margin-top: 5%;
 }
 /* project-section*/
-.inner_container .proeject_wrap {
-  background: pink;
+.proeject_wrap .web {
+  position: relative;
+  padding-left: calc((100vw - 92%) / 2);
   margin-top: 260px;
+  /* background: pink; */
 }
-swiper-container swiper-slide {
-  width: 414px;
+.proeject_wrap .web .webPub_title {
+  margin-bottom: 40px;
+}
+.proeject_wrap .web .mySwiper {
+  overflow: hidden;
+}
+.proeject_wrap .web .mySwiper swiper-slide {
+  width: 414px !important;
   flex-shrink: 0;
+  /* margin-right: 40px; */
 }
-swiper-container swiper-slide .web_thumb {
+.proeject_wrap .web .mySwiper swiper-slide .web_thumb {
   width: 414px;
   height: 267px;
   flex-shrink: 0;
-  background: blue;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
 }
-swiper-container swiper-slide .web_thumb img {
+.proeject_wrap .web .mySwiper swiper-slide .web_thumb img {
   width: 100%;
 }
-swiper-container swiper-slide .bingfree_desc_wrap {
+.proeject_wrap .web .mySwiper swiper-slide .desc_wrap {
   width: 414px;
-  background: yellowgreen;
+  /* background: yellowgreen; */
 }
+/* 커스텀 dot */
+.custom-dots {
+  position: absolute;
+  top: 50%; /* Swiper 내부 기준 상단 */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* 그룹 자체를 정확히 가운데로 */
+  height: 44px; /* dot 높이 */
+  z-index: 99;
+}
+.custom-dots .dot {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* transform 변화 0.3초 부드럽게 */
+}
+.custom-dots .dot:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+/* 왼쪽 dot */
+.custom-dots .dot-prev {
+  top: 0;
+  left: 100px;
+  /* display: none; */
+}
+/* 오른쪽 dot */
+.custom-dots .dot-next {
+  top: 0;
+  right: 100px;
+}
+
+/* .custom-dots .dot.active {
+  background-color: #333;
+} */
