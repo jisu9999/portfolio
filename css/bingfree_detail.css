@@ -86,7 +86,7 @@ header nav .gnb {
   line-height: normal;
 }
 /* 본문 */
-.bing_inner{
+.detail_inner{
   width: 80%;
   max-width: 1496px;
   margin: 0 auto;
@@ -96,36 +96,36 @@ header nav .gnb {
   margin-top: 164px;
   padding-bottom: 170px;
 }
-.bing_inner .bing_left{
+.detail_inner .detail_left{
   width: 524px;
   /* background: pink; */
 }
-.bing_inner .bing_left h2{
+.detail_inner .detail_left h2{
   color: var(--gray8, #1B1C1F);
   font-size: 44px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 35px;
 }
-.bing_left .bing_desc_wrap>p{
+.detail_left .detail_desc_wrap>p{
   color: var(--gray8, #1B1C1F);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 31px; /* 172.222% */
   letter-spacing: -0.18px;
   margin-bottom: 20px;
 }
-.bing_left .bing_desc_wrap ul li{
+.detail_left .detail_desc_wrap ul li{
   display: flex;
   border-bottom: 0.5px solid var(--gray3);
 }
-.bing_left .bing_desc_wrap ul li p{
+.detail_left .detail_desc_wrap ul li p{
   padding: 10px 0;
 }
-.bing_left .bing_desc_wrap ul li:first-child p:nth-child(2){
+.detail_left .detail_desc_wrap ul li:first-child p:nth-child(2){
   margin-left: 73px;
 }
-.bing_left .bing_desc_wrap ul li:nth-child(2) p:nth-child(2){
+.detail_left .detail_desc_wrap ul li:nth-child(2) p:nth-child(2){
   margin-left: 65px;
 }
 .list_title{
@@ -137,27 +137,27 @@ header nav .gnb {
   color: var(--gray7);
   font-weight: 500;
 }
-.bing_desc_wrap .btn_wrap{
+.detail_desc_wrap .btn_wrap{
   display: flex;
   gap: 28px;
   margin-top: 30px;
 }
-.bing_desc_wrap .btn_wrap button{
+.detail_desc_wrap .btn_wrap button{
   width: 248px;
   height: 65px;
   border: 0;
   background: var(--btn_color);
 }
-.bing_desc_wrap .btn_wrap button a{
+.detail_desc_wrap .btn_wrap button a{
   font-size: 18px;
   font-weight: 400;
   color: var(--gray0);
 }
-.bing_inner .bing_right{
+.detail_inner .detail_right{
   width: 55%;
   max-width: 852px;
 }
-.bing_right img{
+.detail_right img{
   width: 100%;
   height: auto;
   max-width: 852px;
