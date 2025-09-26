@@ -1,25 +1,26 @@
 @charset "utf-8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul,li{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
-a{
-    display: block;
-    text-decoration: none;
-    color: inherit;
+a {
+  display: block;
+  text-decoration: none;
+  font-family: "TASA Explorer";
 }
 img{
-    vertical-align: top;
-    max-width: 100%;
+  vertical-align: top;
+  max-width: 100%;
 }
 button{
-    cursor: pointer;
+  cursor: pointer;
 }
-:root{
+:root {
   --gray8: #1b1c1f;
   --gray7: #26282b;
   --gray6: #474c52;
@@ -34,7 +35,7 @@ button{
   /* header 관련 */
   --header-top: 45px;
   --header-height: 69px;
-  --main-extra: 106px;  
+  --main-extra: 106px;
 }
 body {
   font-family: "TASA Explorer", sans-serif;
@@ -153,6 +154,11 @@ header nav .gnb {
   color: var(--gray0);
 }
 .detail_inner .detail_right{
-  /* width: 55%; */
+  width: 55%;
+  max-width: 852px;
+}
+.detail_right img{
+  width: 100%;
+  height: auto;
   max-width: 852px;
 }
