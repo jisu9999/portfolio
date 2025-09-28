@@ -209,16 +209,21 @@ header nav .gnb {
 .project_wrap .web_wrap .mySwiper swiper-slide a{
   height: 100%;
 }
+.project_wrap .web_wrap .mySwiper swiper-slide a:hover .web_thumb img{
+  transform: scale(0.95);
+}
 .project_wrap .web_wrap .mySwiper swiper-slide .web_thumb {
   width: 414px;
   height: 267px;
   flex-shrink: 0;
   filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
   pointer-events: none;
+  overflow: hidden;
 }
 .project_wrap .web_wrap .mySwiper swiper-slide .web_thumb img {
   width: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 .project_wrap .web_wrap .mySwiper swiper-slide .desc_wrap {
   width: 414px;

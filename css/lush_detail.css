@@ -148,17 +148,17 @@ header nav .gnb {
   border: 0;
   background: var(--btn_color);
 }
+.detail_desc_wrap .btn_wrap button:hover{
+  background: #0B44D3
+}
 .detail_desc_wrap .btn_wrap button a{
   font-size: 18px;
   font-weight: 400;
   color: var(--gray0);
+  height: 100%;
+  line-height: 65px;
 }
 .detail_inner .detail_right{
   width: 55%;
-  max-width: 852px;
-}
-.detail_right img{
-  width: 100%;
-  height: auto;
   max-width: 852px;
 }
