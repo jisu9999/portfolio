@@ -245,7 +245,6 @@ header nav .gnb {
   left: 0;
   right: 0;
   transform: translateY(-50%); /* 그룹 자체를 정확히 가운데로 */
-  height: 44px; /* dot 높이 */
   z-index: 99;
 }
 .custom-dots .dot {
