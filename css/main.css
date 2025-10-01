@@ -139,7 +139,7 @@ header {
   height: 69px;
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 40px;
   align-items: center;
   /* position: fixed; */
   /* top: 45px; */
@@ -158,6 +158,9 @@ header nav .gnb {
   display: flex;
   gap: 36px;
   cursor: pointer;
+}
+header nav .gnb li:hover{
+  border-bottom: 1px solid #333 ;
 }
 /* main visual */
 .inner .main {
