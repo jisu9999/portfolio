@@ -102,7 +102,7 @@ body {
   color: var(--gray8, #1b1c1f);
   font-family: "TASA Explorer";
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .detailPage_title {
   color: var(--gray8, #1b1c1f);
@@ -160,7 +160,10 @@ header nav .gnb {
   cursor: pointer;
 }
 header nav .gnb li:hover{
-  border-bottom: 1px solid #333 ;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--gray8);
 }
 /* main visual */
 .inner .main {
