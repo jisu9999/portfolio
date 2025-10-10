@@ -160,10 +160,7 @@ header nav .gnb {
   cursor: pointer;
 }
 header nav .gnb li:hover{
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
-  text-decoration-color: var(--gray8);
+  color: var(--gray5);
 }
 /* main visual */
 .inner .main {
