@@ -284,6 +284,9 @@ header nav .gnb li:hover{
   display: flex;
   justify-content: space-between;
 }
+.design_right .design_box{
+  margin-bottom: 150px;
+}
 .design_right .design_box .design_thumb{
   margin-top: 20px;
 }

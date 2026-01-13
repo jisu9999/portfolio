@@ -161,3 +161,8 @@ header nav .gnb {
   width: 55%;
   max-width: 852px;
 }
+.detail_img{
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
