@@ -110,7 +110,7 @@ header nav .gnb {
   color: var(--gray8, #1B1C1F);
   font-size: 16px;
   font-weight: 400;
-  line-height: 31px; /* 172.222% */
+  line-height: 1.6;
   letter-spacing: -0.18px;
   margin-bottom: 20px;
 }

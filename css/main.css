@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 ul,
 li {
   list-style: none;
@@ -189,6 +192,9 @@ header nav .gnb li:hover{
   margin-top: 5%;
 }
 /* 프로젝트 -웹 퍼블리싱 */
+#projects{
+   scroll-margin-top: 80px;
+}
 .project_wrap .web_wrap {
   position: relative;
   padding-left: calc((100vw - 92%) / 2);
