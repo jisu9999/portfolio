@@ -91,7 +91,7 @@ body {
   margin: 15px 0 10px;
 }
 .tech_btn {
-  max-width: 414px;
+  max-width: 700px;
 }
 .tech_btn span {
   border-radius: 8px;
@@ -130,7 +130,7 @@ body {
   width: 100%;
 }
 .inner {
-  width: 1440px;
+  max-width: 1440px;
   /* background: rgb(201, 245, 201); */
   margin: 0 auto;
   position: relative;
@@ -172,8 +172,10 @@ header nav .gnb li:hover{
   );
 }
 .inner .main .visual {
-  width: 869px;
-  height: 533px;
+  /* width: 869px; */
+  width: 1100px;
+  height: auto;
+  /* height: 533px; */
   flex-shrink: 0;
   margin: auto;
 }
@@ -181,6 +183,15 @@ header nav .gnb li:hover{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.8s ease-out forwards;
+}
+@keyframes slideUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .inner .main .introduction {
   width: 913px;
@@ -190,6 +201,16 @@ header nav .gnb li:hover{
 }
 .introduction p + p {
   margin-top: 5%;
+}
+.introduction p {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.introduction p.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* 프로젝트 -웹 퍼블리싱 */
 #projects{
@@ -280,19 +301,33 @@ header nav .gnb li:hover{
   right: 100px;
 }
 /* 프로젝트 -디자인 */
-.design_wrap{
+/* .design_wrap{
   display: flex;
   justify-content: space-between;
+} */
+ .design_title{
+  margin-bottom: 60px;
+ }
+.design_right{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .design_right .design_box{
-  margin-bottom: 150px;
+  width: calc(50% - 20px);
+  margin-bottom: 140px;
+}
+.design_right .design_box:last-child{
+  margin-bottom: 50px;
 }
 .design_right .design_box .design_thumb{
+  width: 700px;
+  height: 524px;
   margin-top: 20px;
 }
 .design_right .design_box .design_thumb img{
-  width: 891px;
-  height: 668px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .design_right .design_box .design_desc_wrap{
@@ -307,4 +342,71 @@ header nav .gnb li:hover{
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.2px;
+}
+/* footer */
+footer{
+  height: 500px;
+}
+footer h1{
+  font-size: 95px;
+}
+footer .footer_comment{
+  margin-top: 50px;
+}
+footer .footer_comment > span{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray7);
+  line-height: 1.9;
+  background: linear-gradient(
+    transparent 65%, #fff3a0 65%
+  );
+ -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+footer .footer_comment .email{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+footer .footer_comment .email .outbound-link{
+  font-size: 15px;
+  color: var(--gray4);
+  vertical-align: top;
+  padding-left: 3px;
+}
+/* go-top btn */
+.go-top {
+  position: fixed;
+  right: 100px;
+  bottom: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+  color: var(--gray7);
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+/* 나타나는 상태 */
+.go-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.go-top svg{
+  color: var(--gray6);
+}
+/* design 섹션 반응형 */
+@media (max-width: 1380px) {
+  .design_right .design_box {
+    width: 100%; /* 모바일에선 1줄 */
+  }
 }

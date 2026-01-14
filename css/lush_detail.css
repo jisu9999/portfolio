@@ -11,6 +11,7 @@ ol {
 a {
   display: block;
   text-decoration: none;
+  color: inherit;
   font-family: "TASA Explorer";
 }
 img{
@@ -77,13 +78,14 @@ header nav .gnb {
   gap: 36px;
   cursor: pointer;
 }
+header nav .gnb li:hover{
+  color: var(--gray5);
+}
 .home_nav {
   color: var(--gray8, #1b1c1f);
   font-family: "TASA Explorer";
-  font-size: 26px;
-  font-style: normal;
+  font-size: 20px;
   font-weight: 500;
-  line-height: normal;
 }
 /* 본문 */
 .detail_inner{
@@ -166,4 +168,33 @@ header nav .gnb {
   display: block;
   max-width: 100%;
   text-align: center;
+}
+/* go-top btn */
+.go-top {
+  position: fixed;
+  right: 100px;
+  bottom: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+  color: var(--gray7);
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+/* 나타나는 상태 */
+.go-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.go-top svg{
+  color: var(--gray6);
 }

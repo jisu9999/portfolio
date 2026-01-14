@@ -26,4 +26,28 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // 초기 상태
   prevBtn.style.display = "none";
+
+  // 소개 멘트 스크롤
+   const paragraphs = document.querySelectorAll('.introduction p');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+
+          // ⭐ 한 번 실행 후 관찰 중단
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  paragraphs.forEach((p, index) => {
+    p.style.transitionDelay = `${index * 0.15}s`;
+    observer.observe(p);
+  });
 });
