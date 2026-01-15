@@ -166,8 +166,13 @@ header nav .gnb li:hover{
 }
 .detail_img{
   display: block;
-  max-width: 100%;
-  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.detail_img img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 /* go-top btn */
 .go-top {

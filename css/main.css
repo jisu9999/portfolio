@@ -404,6 +404,15 @@ footer .footer_comment .email .outbound-link{
 .go-top svg{
   color: var(--gray6);
 }
+/* about me 페이지 */
+.aboutme{
+            max-width: 1200px;
+            height: auto;
+            margin: 70px auto 50px;
+        }
+        .home_title{
+            margin-top: 120px;
+        }
 /* design 섹션 반응형 */
 @media (max-width: 1380px) {
   .design_right .design_box {

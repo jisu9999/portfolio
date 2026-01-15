@@ -178,6 +178,16 @@ header nav .gnb li:hover{
     display: flex;
     gap: 212px;
 }
+.detail_img{
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.detail_img img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* go-top btn */
 .go-top {
   position: fixed;
